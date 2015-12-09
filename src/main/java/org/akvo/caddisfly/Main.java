@@ -28,7 +28,7 @@ public class Main {
         TestInfo testInfo = new TestInfo();
 
 
-        File[] files = new File("/Users/super/VertxProjects/Caddisfly/" + "/calibrations/").listFiles(
+        File[] files = new File("C:\\Users\\Ishan\\Caddisfly\\GitHub\\calibration-eval\\calibrations").listFiles(
                 (dir, name) -> {
                     return name.toLowerCase().endsWith(".txt");
                 }
@@ -53,7 +53,7 @@ public class Main {
 //        }
 
         ArrayList<Swatch> defaultSwatches = new ArrayList<>();
-        File defaultFile = new File("/Users/super/VertxProjects/Caddisfly/" + "/calibrations/Default.text");
+        File defaultFile = new File("C:\\Users\\Ishan\\Caddisfly\\GitHub\\calibration-eval\\calibrations\\" + "Default.text");
         if (defaultFile.exists()) {
             defaultSwatches = getSwatchList(defaultFile, 2);
         }
